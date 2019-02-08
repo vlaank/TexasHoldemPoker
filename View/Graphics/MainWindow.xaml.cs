@@ -24,5 +24,15 @@ namespace Graphics
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            label.Content = ViewModelLib.IntelligenceClassExample.getInterfaceAndPlayerClassNames();
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            label.Content = "";
+        }
     }
 }

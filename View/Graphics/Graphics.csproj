@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9816ACE8-2726-4849-BE35-7D8525F9D664}</ProjectGuid>
+    <ProjectGuid>{6EAAE84C-8AFA-4C37-AF4D-CB142B92169E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Graphics</RootNamespace>
     <AssemblyName>Graphics</AssemblyName>
@@ -93,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ViewModel\Intelligence\ViewModelLib.csproj">
+      <Project>{80269688-0f01-411d-9e36-46a3e9907b3c}</Project>
+      <Name>ViewModelLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
