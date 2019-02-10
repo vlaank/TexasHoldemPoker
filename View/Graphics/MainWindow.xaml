@@ -8,17 +8,10 @@
         Title="Пример приложения с использованием паттерна MVVM" Height="450" Width="800">
     <Grid>
         <Button x:Name="button1" Content="Получить названия классов Model" HorizontalAlignment="Left" Margin="79,130,0,0" VerticalAlignment="Top" Width="241" Height="49" Click="Button1_Click"/>
-        <Button x:Name="button2" Content="Очистить" HorizontalAlignment="Left" Margin="79,214,0,0" VerticalAlignment="Top" Width="241" Height="49" Click="Button2_Click" >
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.03"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+        <Button x:Name="button2" Content="Очистить" HorizontalAlignment="Left" Margin="79,214,0,0" VerticalAlignment="Top" Width="241" Height="49" Click="Button2_Click"/>
+        <Button Content="Пример" Click="Button3_Click" Margin="331,304,331,67" />
         <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="75" Margin="409,153,0,0" VerticalAlignment="Top" Width="274"/>
+
 
     </Grid>
 </Window>

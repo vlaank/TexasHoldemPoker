@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ReactiveUI" Version="9.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Model\Interface\InterfaceLib.csproj" />
     <ProjectReference Include="..\..\Model\Player\PlayerLib.csproj" />
   </ItemGroup>

@@ -34,5 +34,11 @@ namespace Graphics
         {
             label.Content = "";
         }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            TestWindow testWindow = new TestWindow();
+            testWindow.Show();
+        }
     }
 }
