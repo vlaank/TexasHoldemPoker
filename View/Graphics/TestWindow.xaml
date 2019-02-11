@@ -5,17 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Graphics"
         mc:Ignorable="d"
-        Title="TestWindow" Height="450" Width="800">
+        Title="TestWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -35,7 +34,7 @@
         <TextBlock VerticalAlignment="Center" Margin="5" Grid.Column="1" Grid.Row="3" TextAlignment="Center" 
                  Text="{Binding IsBusy, UpdateSourceTrigger=PropertyChanged}" Height="30"/>
         <Button VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5"
-                Content="Get Full Name by btn (Not working: Read VM code)" Grid.Row="4" Grid.Column="1" Width="auto" Height="30"
+                Content="Get Fullname by ReactiveCommand" Grid.Row="4" Grid.Column="1" Width="auto" Height="30"
                 Command="{Binding GetFullNameCommand}"/>
         <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#40000000" Grid.ColumnSpan="2" Grid.RowSpan="6"
                 Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}"/>
